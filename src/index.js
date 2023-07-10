@@ -184,11 +184,11 @@ import "./styles.css";
 
 // const formattedNum = typeof num ==='number' ? num.toLocaleString():'数値を入力してください'
 // console.log(formattedNum);
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
-};
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+// };
 
-console.log(checkSum(50, 49));
+// console.log(checkSum(50, 49));
 // const flag1 = true;
 // const flag2 = false;
 
@@ -198,3 +198,13 @@ console.log(checkSum(50, 49));
 // if(flag1 && flag2){
 //   console.log("1も2も１trueになります");
 // }
+const num = null;
+const fee = num || "金額未設定です";
+console.log(fee);
+
+const num2 = null;
+const fee2 = num2 &&"何か設定されました";
+console.log(fee2);
+
+
+
